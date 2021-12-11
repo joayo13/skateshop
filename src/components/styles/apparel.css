@@ -1,0 +1,232 @@
+
+.apparel-background {
+    min-height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.most-popular {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.wrapper {
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    height: 600px;
+    width: 350px;
+}
+.exit-modal-wrapper {
+    top: 0;
+    align-self: flex-start;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.exit-modal {
+    cursor: pointer;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    align-self: flex-start;
+    margin-left: auto;
+}
+.selected-image {
+    border: 2px solid black;
+    align-self: center;
+    height: 300px;
+    width: 250px;
+}
+.selected-title {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    font-size: 20px;
+}
+.selected-price {
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+    font-size: 16px;
+}
+.sizes-container {
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+}
+.sizes {
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border-radius: 50%;
+
+}
+.sizes:hover {
+    background-color: black;
+}
+.add-to-cart {
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+.background-apparel {
+    overflow: hidden;
+    margin-top: 50px;
+    width: 85%;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+ul {
+    position: relative;
+    margin-left: -40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 40vh;
+    flex-grow: 1;
+}
+.home-buttons {
+    padding: 15px 15px 15px 15px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+    border: 1px solid white;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.image {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+.pageNavBreak {
+ display: flex;
+ justify-content: center;
+ margin-top: 50px;
+ margin-bottom: 50px;
+ width: 100%;
+ height: 30px;
+}
+.pageNavContainer {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pageNavButton {
+  background-color: black;
+  color: white;
+  width: 50px;
+}
+
+
+
+@media (max-aspect-ratio: 1/1) {
+    .list-item {
+      height: 30vh;
+    }
+  }
+  @media (max-height: 480px) {
+    .list-item {
+      height: 80vh;
+    }
+  }
+  @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+    ul {
+      flex-direction: row;
+    }
+  
+    .list-item {
+      height: auto;
+      width: 100%;
+    }
+  
+    .image {
+      width: 100%;
+      max-height: 75vh;
+      min-width: 0;
+    }
+    h2 {
+      font-size: 10px !important;
+    }
+    h3 {
+      font-size: 10px !important;
+    }
+    h4 {
+      font-size: 10px !important;
+    }
+  }
+
+
+
+@media (max-width: 900px) {
+    .side-nav {
+        display: none;
+    }
+    .side-nav2 {
+        display: block !important;
+    }
+}

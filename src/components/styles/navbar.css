@@ -1,0 +1,78 @@
+body {
+    background-color: black;
+}
+.nav-container {
+    text-align: center;
+}
+.cart-container {
+    justify-content: flex-end;
+    background-color: black;
+    z-index: 100;
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.cart {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+.cart-count {
+    margin-right: 20px;
+    cursor: default;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height: 50px;
+    width: 25px;
+    color: white;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    flex-wrap: wrap;
+    
+}
+.nav-button {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+   
+}
+.nav-button:hover {
+    background-color: white;
+    color: black;
+}
+li {
+    list-style: none;
+}
+.header {
+    padding: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    background-image: url('https://media.istockphoto.com/vectors/graffiti-seamless-pattern-vector-id626085840?k=20&m=626085840&s=612x612&w=0&h=3iwF3tvx-X15_Bhpcq6r25cwxz_5PXcPic22rsEH2ok=');
+    background-size: contain;
+}
+.joayo-logo {
+    height: 200px;
+}
+.header-sale {
+    cursor: pointer;
+    padding: 8px 5px 8px 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: center;
+    display: inline-block;
+    width: 350px;
+    background-color: yellow;
+}
