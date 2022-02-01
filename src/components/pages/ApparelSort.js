@@ -7,18 +7,19 @@ function ApparelSort(props) {
     return (
         <div className ='apparel-sort-container'>
             <div className ='price-sort'>
-                Price
-                <select name='price' ref = {props.priceRef} className='price-select' onChange ={(event) => {props.sortPrice(event); props.sp.set('sort', event.target.value); console.log(props.sp.toString())}}>
-                    <option>Select</option>
+                
+                <select name='price' className='price-select' onChange ={(event) => { props.queryString.set('price', event.target.value); props.handleQueryStringChange('price')}}>
+                    <option value=''>Price</option>
                     <option value='low-to-high'>Low to High</option>
                     <option value='high-to-low'>High to Low</option>
                 </select>
                 </div>
             <div className ='color-sort'>
-                Color
-                <select name='color' ref = {props.colorRef} className='color-select' onChange = {(event) => props.sortColor(event)}>
-                    <option>Select</option>
+                
+                <select name='color' className='color-select' onChange = {(event) => { props.queryString.set('color', event.target.value); props.handleQueryStringChange('color')}}>
+                    <option value=''>Color</option>
                     <option value='red'>Red</option>
+                    <option value ='pink'>Pink</option>
                     <option value='blue'>Blue</option>
                     <option value='green'>Green</option>
                     <option value='orange'>Orange</option>
@@ -28,12 +29,15 @@ function ApparelSort(props) {
                     <option value='black'>Black</option>
                     <option value='white'>White</option>
                     <option value='grey'>Grey</option>
+                    <option value='silver'>Silver</option>
+                    <option value ='natural'>Natural</option>
+                    <option value='assorted'>Assorted</option>
                 </select>
                 </div>
             <div className = 'gender-sort'>
-                Gender
-                <select name='gender' ref = {props.genderRef} className = 'gender-select' onChange = {(event) => props.sortGender(event) }>
-                <option>Select</option>
+                
+                <select name='gender' className = 'gender-select' onChange = {(event) => { props.queryString.set('gender', event.target.value); props.handleQueryStringChange('gender') }}>
+                <option value=''>Gender</option>
                 <option value = 'mens'>Mens</option>
                 <option value = 'womens'>Womens</option>
                 </select>

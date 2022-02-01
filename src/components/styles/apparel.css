@@ -1,3 +1,8 @@
+.page-background {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
 
 .apparel-background {
     min-height: 700px;
@@ -6,7 +11,7 @@
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
+    max-width: 1200px;
     background-color: white;
 }
 
@@ -43,6 +48,7 @@ a {
     position: fixed;
     height: 600px;
     width: 350px;
+    z-index: 999;
 }
 .exit-modal-wrapper {
     top: 0;
@@ -67,6 +73,7 @@ a {
     width: 250px;
 }
 .selected-title {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     cursor: default;
     font-size: 20px;
@@ -101,6 +108,29 @@ a {
 }
 .sizes:hover {
     background-color: black;
+}
+.jeans-sizes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+.shoes-sizes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 40px;
+  font-size: 12px;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
 }
 .add-to-cart {
     margin-top: 30px;
@@ -163,23 +193,50 @@ ul {
   object-fit: cover;
   vertical-align: bottom;
 }
-.pageNavBreak {
- display: flex;
- justify-content: center;
- margin-top: 50px;
- margin-bottom: 50px;
- width: 100%;
- height: 30px;
+
+table.scroll {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
 }
-.pageNavContainer {
-  width: 200px;
-  display: flex;
-  justify-content: space-evenly;
+.rtable {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.pageNavButton {
-  background-color: black;
-  color: white;
-  width: 50px;
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+.rtable .no-left-border {
+  border-left: none;
+}
+.rtable td, .rtable th {
+  border: 1px solid #d9d7ce;
+      border-left-color: rgb(217, 215, 206);
+      border-left-style: solid;
+      border-left-width: 1px;
+}
+.rtable th {
+  color: #4a4a4a;
+}
+.table-row-header {
+  background: #f8f8f8;
+  text-align: left;
+}
+table tbody td, table tbody th {
+  padding: .5rem .625rem .625rem;
+}
+.table-col-header {
+  background: #f8f8f8;
+  text-align: center;
 }
 
 
@@ -222,11 +279,15 @@ ul {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .side-nav {
         display: none;
     }
     .side-nav2 {
         display: block !important;
+    }
+    .joggersSize {
+      width: 95vw;
+      max-height: 200px;
     }
 }

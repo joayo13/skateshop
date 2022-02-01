@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Accessories() {
+function Sales() {
     return (
         <div>
-            Accessories
+        UNDER CONSTRUCTION
         </div>
     )
 }
 
-export default Accessories
+export default Sales

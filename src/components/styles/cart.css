@@ -4,7 +4,7 @@
     overflow-y: scroll;
     transform: translateX(100%);
     transition: 500ms ease;
-    z-index: 100;
+    z-index: 999;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

@@ -7,6 +7,7 @@ function Apparel(props) {
 
 
     return (
+        <div className ='page-background'>
         <div>
         <div className='apparel-background'>
         <SideNav/>
@@ -35,6 +36,7 @@ function Apparel(props) {
                     <img className="image" src={'http://www.vuskateboardshop.com/vu/wp-content/uploads/2018/09/IMG_4910-e1538087729893.jpg'}/>
                     </li>
             </ul>
+        </div>
         </div>
         </div>
         </div>

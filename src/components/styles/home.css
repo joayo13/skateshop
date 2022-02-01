@@ -1,6 +1,4 @@
-body {
-    background-color: black;
-}
+
 .background {
     overflow: hidden;
     margin-top: 50px;
@@ -9,7 +7,6 @@ body {
     margin-right: auto;
     margin-left: auto;
     background-color: white;
-    border: 3px solid rgb(80, 80, 80);
 }
 ul {
     position: relative;
