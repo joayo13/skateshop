@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/skateshop/static/css/main.25e4ad5b.css",
-    "main.js": "/skateshop/static/js/main.398282de.js",
+    "main.js": "/skateshop/static/js/main.bb0524eb.js",
     "index.html": "/skateshop/index.html",
     "main.25e4ad5b.css.map": "/skateshop/static/css/main.25e4ad5b.css.map",
-    "main.398282de.js.map": "/skateshop/static/js/main.398282de.js.map"
+    "main.bb0524eb.js.map": "/skateshop/static/js/main.bb0524eb.js.map"
   },
   "entrypoints": [
     "static/css/main.25e4ad5b.css",
-    "static/js/main.398282de.js"
+    "static/js/main.bb0524eb.js"
   ]
 }
